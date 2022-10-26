@@ -1,31 +1,26 @@
+@import "colores";
+
 *{
     margin: 0;
     padding: 0;
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
     font-family: "Roboto", Arial, sans-serif;
-}
-
-
-/* Elementos */
-
-main{
-    margin-bottom: 80px;
-}
-
-footer{
-    background-color:  rgba(157, 169, 171, 0.9);
-    text-align: center;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-    height: 10px;
-    width: 100%;
-    box-sizing: content-box;
-}
-
-
-body{
-    background-color: rgba(157, 169, 171, 0.2);
+        main{
+            margin-bottom: 80px;
+        }
+        footer{
+            background-color:  $color__gris__1;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            height: 10px;
+            width: 100%;
+            box-sizing: content-box;
+        }
+        body{
+            background-color: $color__gris__2;
+        }
 }
 
 
