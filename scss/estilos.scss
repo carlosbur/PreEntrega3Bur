@@ -1,5 +1,7 @@
 @import "colores";
 
+/*elementos*/
+
 *{
     margin: 0;
     padding: 0;
@@ -23,7 +25,6 @@
         }
 }
 
-
 /* Clases */
 
 .header{
@@ -32,68 +33,59 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(rgba(157, 169, 171, 0.9), rgba(157, 169, 171, 0.3));    
+    background-image: linear-gradient($color__gris__1, $color__gris__3);    
+        li{
+            display: inline-block;
+            padding: 10px;
+        }
+        .header__logo{
+            height: 80px;
+            padding-bottom: 5px;
+        }
+        .header__nav{
+            display: flex;
+            flex-direction: column;
+                ul{
+                    display: none;
+                    margin-bottom: 0;
+                        &.show{
+                            display: flex;
+                            text-decoration: none;
+                            list-style-type: none;
+                            font-size: 18px;
+                            flex-wrap: wrap;
+                        }
+                }
+                a{
+                    border-radius: 5px;
+                    padding: 5px;
+                    text-decoration: none;
+                    color: $color__oscuro__1;
+                    font-weight: 600;
+                        &:hover{
+                        color: $color__claro__1;
+                        background-color:$color__claro__2;
+                        }   
+                    }
+                }
+            .header__nav__icono{
+                font-size: 20px;
+                color: $color__oscuro__1;
+                align-self: center;
+                justify-self: center;
+                font-size: 30px;
+                cursor: pointer;
+            }
 }
-
-.header__logo{
-    height: 80px;
-    padding-bottom: 5px;
-}
-
-.header__nav ul{
-    display: none;
-    margin-bottom: 0;
-}
-
-
-.header__nav{
-    display: flex;
-    flex-direction: column;
-
-}
-.header__nav ul.show{
-    display: flex;
-    text-decoration: none;
-    list-style-type: none;
-    font-size: 18px;
-    flex-wrap: wrap;
-}
-
-.header li {
-    display: inline-block;
-    padding: 10px;
-}
-
-.header__nav__icono{
-    font-size: 20px;
-    color: #323232;
-    align-self: center;
-    justify-self: center;
-    font-size: 30px;
-    cursor: pointer;
-}
-
-.header__nav a{
-    border-radius: 5px;
-    padding: 5px;
-    text-decoration: none;
-    color: #323232;
-    font-weight: 600;
-}
-
-.header__nav a:hover{
-    color: whitesmoke;
-    background-color:darkgray;
-}   
 
 .titulo{
     margin: 20px 0 0 0;    
-    color:rgba(54, 170, 15, 0.8);
+    color:$color__verde__1;
     font-weight: 600;
     text-align: center;
     font-size: 30px;
     top:79px;
-    background-color: white;
+    background-color: $color__claro__1;
     padding: 10px 0;
 }
 
@@ -107,39 +99,36 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 10px;
+        p{
+            width: 200px;
+            font-size: 18px;
+            font-weight: 600;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .container__section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            padding: 10px;
+                &:hover{
+                    scale: 1.1;
+                    transition: .2s;
+                }
+        }
+            .container__section__foto{
+                width: 250px;
+                height: 150px;
+                margin: 10px 10px 0px;
+                box-shadow: 0px 0px 20px 10px $color__verde__2;
+            }
 }
 
-.container p{
-    width: 200px;
-    font-size: 18px;
-    font-weight: 600;
-    text-align: center;
-    margin-top: 20px;
-}
 
 .persona2{
     background-color: rgba(157, 169, 171, 0.9);
-}
-
-.container__section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    padding: 10px;
-}
-
-.container__section__foto{
-    width: 250px;
-    height: 150px;
-    margin: 10px 10px 0px;
-    box-shadow: 0px 0px 20px 10px rgba(148, 208, 167, 0.701);
-}
-
-.container__section:hover{
-    scale: 1.1;
-    transition: .2s;
 }
 
 .slide {
