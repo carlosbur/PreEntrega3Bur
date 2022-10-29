@@ -111,7 +111,7 @@
   align-content: center;
   padding: 10px;
 }
-.container .container__section:hover {
+.container .container__section .container__section:hover {
   scale: 1.1;
   transition: 0.2s;
 }
@@ -122,56 +122,44 @@
   box-shadow: 0px 0px 20px 10px rgba(148, 208, 167, 0.701);
 }
 
-.persona2 {
-  background-color: rgba(157, 169, 171, 0.9);
-}
-
-.slide {
-  padding: 50px 0;
-  max-width: 900px;
-}
-
-/* Ids */
-#quienesSomos {
+.quienesSomos {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 20px;
 }
-
-#quienesSomos__grid {
+.quienesSomos .quienesSomos__grid {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
   height: 100%;
   padding: 20px 0;
 }
-
-#quienesSomos__foto {
+.quienesSomos .quienesSomos__grid .persona2 {
+  background-color: rgba(157, 169, 171, 0.9);
+}
+.quienesSomos .quienesSomos__grid .quienesSomos__foto {
   height: 20rem;
   padding: 20px;
 }
-
-#quienesSomos__foto:hover {
+.quienesSomos .quienesSomos__grid .quienesSomos__foto:hover {
   transform: rotateY(360deg);
   transition: 1s;
 }
-
-#quienesSomos__texto {
+.quienesSomos .quienesSomos__grid .quienesSomos__texto {
   width: 60%;
   height: 50%;
   color: #323232;
 }
-
-#quienesSomos__nombre {
+.quienesSomos .quienesSomos__grid .quienesSomos__nombre {
   grid-area: nombre;
   align-self: center;
   font-weight: 600;
   color: #323232;
 }
 
-#container__servicios {
+.container__servicios {
   display: flex;
   height: 100%;
   width: 100%;
@@ -181,8 +169,30 @@
   margin: 20px 0;
   flex-wrap: wrap;
 }
+.container__servicios .container__servicios__descripcion {
+  display: flex;
+  flex-direction: column;
+  color: #323232;
+  width: 80%;
+  align-items: center;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+.container__servicios .container__servicios__descripcion p {
+  margin-top: 20px;
+  font-size: 1rem;
+}
+.container__servicios .container__servicios__descripcion .container__servicios__titulo {
+  font-weight: 700;
+}
+.container__servicios .container__servicios__foto {
+  max-width: 400px;
+  max-height: 200px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
 
-#container__serviciosVerde {
+.container__serviciosVerde {
   display: flex;
   height: 100%;
   width: 100%;
@@ -193,15 +203,7 @@
   background-color: rgba(54, 170, 15, 0.2);
   flex-wrap: wrap;
 }
-
-#container__servicios__foto {
-  max-width: 400px;
-  max-height: 200px;
-  margin-bottom: 20px;
-  padding-top: 20px;
-}
-
-#container__servicios__descripcion {
+.container__serviciosVerde .container__servicios__descripcion {
   display: flex;
   flex-direction: column;
   color: #323232;
@@ -210,22 +212,30 @@
   padding: 10px;
   flex-wrap: wrap;
 }
-
-#container__servicios__titulo {
-  font-weight: 700;
-}
-
-#container__servicios__descripcion p {
+.container__serviciosVerde .container__servicios__descripcion p {
   margin-top: 20px;
   font-size: 1rem;
 }
+.container__serviciosVerde .container__servicios__descripcion .container__servicios__titulo {
+  font-weight: 700;
+}
+.container__serviciosVerde .container__servicios__foto {
+  max-width: 400px;
+  max-height: 200px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
 
-#carousel__contenedor {
+.carousel__contenedor {
   display: flex;
   justify-content: center;
 }
+.carousel__contenedor .slide {
+  padding: 50px 0;
+  max-width: 900px;
+}
 
-#galeria__parrafo {
+.galeria__parrafo {
   font-size: 1.7rem;
   text-align: center;
   margin: 50px 0;
@@ -234,17 +244,14 @@
 #formulario__contacto {
   margin: 15px;
 }
-
-#formulario__contacto__boton {
+#formulario__contacto #formulario__contacto__boton {
   background-color: rgba(54, 170, 15, 0.8);
   border: none;
 }
-
-#formulario__contacto__boton:hover {
+#formulario__contacto #formulario__contacto__boton:hover {
   background-color: rgb(54, 170, 15);
 }
-
-#formulario__contacto__boton:active:focus {
+#formulario__contacto #formulario__contacto__boton:active:focus {
   background-color: rgba(54, 170, 15, 0.8);
 }
 
@@ -255,7 +262,10 @@
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  .header__nav {
+  .header .header__logo {
+    padding: 0;
+  }
+  .header .header__nav {
     display: flex;
     flex-direction: row;
     text-decoration: none;
@@ -264,17 +274,14 @@
     font-size: 18px;
     flex-wrap: wrap;
   }
-  .header__logo {
-    padding: 0;
-  }
-  .header__nav ul {
+  .header .header__nav ul {
     display: inline-block;
     flex-direction: row;
     text-decoration: none;
     list-style-type: none;
     font-size: 18px;
   }
-  .header__nav__icono {
+  .header .header__nav .header__nav__icono {
     display: none;
   }
   .container {
@@ -290,7 +297,7 @@
     text-align: center;
     margin-top: 20px;
   }
-  .container__section {
+  .container .container__section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -298,31 +305,24 @@
     align-content: center;
     padding: 20px;
   }
-  .container__section__foto {
+  .container .container__section:hover {
+    scale: 1.1;
+    transition: 0.2s;
+  }
+  .container .container__section .container__section__foto {
     width: 350px;
     height: 250px;
     margin: 20px 10px 0px;
     box-shadow: 0px 0px 20px 10px rgba(148, 208, 167, 0.701);
   }
-  .container__section:hover {
-    scale: 1.1;
-    transition: 0.2s;
-  }
-  .persona1 {
-    grid-area: persona1;
-  }
-  .persona2 {
-    grid-area: persona2;
-    background-color: rgba(157, 169, 171, 0.01);
-  }
-  #quienesSomos {
+  .quienesSomos {
     display: grid;
     align-items: center;
     justify-content: center;
     grid-template-areas: "persona1 persona2";
     margin-top: 60px;
   }
-  #quienesSomos__grid {
+  .quienesSomos .quienesSomos__grid {
     display: grid;
     height: 550px;
     grid-template-areas: "texto ." "texto foto" ". foto" ". nombre";
@@ -332,13 +332,13 @@
     grid-row-gap: 5px;
     align-items: center;
   }
-  #quienesSomos__foto {
+  .quienesSomos .quienesSomos__grid .quienesSomos__foto {
     height: 25rem;
     grid-area: foto;
     align-self: flex-end;
     justify-content: center;
   }
-  #quienesSomos__texto {
+  .quienesSomos .quienesSomos__grid .quienesSomos__texto {
     grid-area: texto;
     width: 60%;
     height: 50%;
@@ -347,13 +347,20 @@
     font-weight: 600;
     color: #323232;
   }
-  #quienesSomos__nombre {
+  .quienesSomos .quienesSomos__grid .quienesSomos__nombre {
     grid-area: nombre;
     align-self: center;
     font-weight: 600;
     color: #323232;
   }
-  #container__servicios {
+  .quienesSomos .persona1 {
+    grid-area: persona1;
+  }
+  .quienesSomos .persona2 {
+    grid-area: persona2;
+    background-color: rgba(157, 169, 171, 0.1);
+  }
+  ********************* #container__servicios {
     display: grid;
     grid-template-areas: "servicios__foto servicios__descripcion";
     align-items: center;
