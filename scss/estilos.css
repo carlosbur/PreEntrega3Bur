@@ -166,7 +166,7 @@
   color: #323232;
 }
 
-.container__servicios {
+.container__servicios, .container__serviciosVerde {
   display: flex;
   height: 100%;
   width: 100%;
@@ -176,7 +176,7 @@
   margin: 20px 0;
   flex-wrap: wrap;
 }
-.container__servicios .container__servicios__descripcion {
+.container__servicios .container__servicios__descripcion, .container__serviciosVerde .container__servicios__descripcion {
   display: flex;
   flex-direction: column;
   color: #323232;
@@ -185,14 +185,14 @@
   padding: 10px;
   flex-wrap: wrap;
 }
-.container__servicios .container__servicios__descripcion p {
+.container__servicios .container__servicios__descripcion p, .container__serviciosVerde .container__servicios__descripcion p {
   margin-top: 20px;
   font-size: 1rem;
 }
-.container__servicios .container__servicios__descripcion .container__servicios__titulo {
+.container__servicios .container__servicios__descripcion .container__servicios__titulo, .container__serviciosVerde .container__servicios__descripcion .container__servicios__titulo {
   font-weight: 700;
 }
-.container__servicios .container__servicios__foto {
+.container__servicios .container__servicios__foto, .container__serviciosVerde .container__servicios__foto {
   max-width: 400px;
   max-height: 200px;
   margin-bottom: 20px;
@@ -200,15 +200,7 @@
 }
 
 .container__serviciosVerde {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 20px 0;
   background-color: rgba(54, 170, 15, 0.2);
-  flex-wrap: wrap;
 }
 .container__serviciosVerde .container__servicios__descripcion {
   display: flex;
@@ -367,21 +359,21 @@
     grid-area: persona2;
     background-color: rgba(157, 169, 171, 0.1);
   }
-  .container__servicios {
+  .container__servicios, .container__serviciosVerde {
     display: grid;
     grid-template-areas: "servicios__foto servicios__descripcion";
     align-items: center;
     justify-items: center;
   }
-  .container__servicios .container__servicios__descripcion {
+  .container__servicios .container__servicios__descripcion, .container__serviciosVerde .container__servicios__descripcion {
     grid-area: servicios__descripcion;
     padding: 0;
   }
-  .container__servicios .container__servicios__descripcion p {
+  .container__servicios .container__servicios__descripcion p, .container__serviciosVerde .container__servicios__descripcion p {
     margin-top: 20px;
     font-size: 1.3rem;
   }
-  .container__servicios .container__servicios__foto {
+  .container__servicios .container__servicios__foto, .container__serviciosVerde .container__servicios__foto {
     max-width: 800px;
     max-height: 700px;
     width: 100%;
