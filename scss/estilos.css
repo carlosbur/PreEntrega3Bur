@@ -11,12 +11,19 @@
 * footer {
   background-color: rgba(157, 169, 171, 0.9);
   text-align: center;
-  padding: 20px;
+  padding: 15px 30px 40px;
   position: fixed;
   bottom: 0;
-  height: 10px;
+  height: 30px;
   width: 100%;
   box-sizing: content-box;
+}
+* footer i {
+  padding: 0 5px 10px;
+  font-size: 1.8rem;
+}
+* footer p {
+  margin-bottom: 0;
 }
 * body {
   background-color: rgba(157, 169, 171, 0.2);
