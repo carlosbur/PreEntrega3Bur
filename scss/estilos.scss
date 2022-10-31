@@ -229,12 +229,11 @@
     }
 }
 
-
 .carousel__contenedor{
     display: flex;
     justify-content: center;
     .slide {
-        padding: 50px 0;
+        padding: 50px 0 0;
         max-width: 900px;
     }
 }
@@ -243,10 +242,14 @@
     font-size: 1.7rem;
     text-align: center;
     margin: 50px 0;
+    padding: 0 0 20px;
 }
+
+/* IDs*/
 
 #formulario__contacto{
     margin: 15px;
+    padding-bottom: 20px;
         #formulario__contacto__boton{
             background-color: $color__verde__1;
             border: none;
@@ -259,8 +262,13 @@
         }  
 }
 
+/* Media queries*/
+
 @media (min-width: 576px){
 
+    main{
+        padding-bottom: 20px;
+    }
     .header{
         display: flex;
         flex-direction: row;
@@ -348,7 +356,6 @@
                         align-self: flex-end;
                         justify-content: center;
                     }
-                    
                     .quienesSomos__texto{
                         grid-area: texto;
                         width: 60%;
@@ -358,7 +365,6 @@
                         font-weight: 600;
                         color: $color__oscuro__1;
                     }
-                    
                     .quienesSomos__nombre{
                         grid-area: nombre;
                         align-self: center;
@@ -422,6 +428,7 @@
     
     .galeria__parrafo{
         margin: 0px;
+        padding-top: 20px;
     }
     
 }

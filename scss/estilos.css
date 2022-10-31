@@ -230,7 +230,7 @@
   justify-content: center;
 }
 .carousel__contenedor .slide {
-  padding: 50px 0;
+  padding: 50px 0 0;
   max-width: 900px;
 }
 
@@ -238,10 +238,13 @@
   font-size: 1.7rem;
   text-align: center;
   margin: 50px 0;
+  padding: 0 0 20px;
 }
 
+/* IDs*/
 #formulario__contacto {
   margin: 15px;
+  padding-bottom: 20px;
 }
 #formulario__contacto #formulario__contacto__boton {
   background-color: rgba(54, 170, 15, 0.8);
@@ -254,7 +257,11 @@
   background-color: rgba(54, 170, 15, 0.8);
 }
 
+/* Media queries*/
 @media (min-width: 576px) {
+  main {
+    padding-bottom: 20px;
+  }
   .header {
     display: flex;
     flex-direction: row;
@@ -401,5 +408,6 @@
   }
   .galeria__parrafo {
     margin: 0px;
+    padding-top: 20px;
   }
 }/*# sourceMappingURL=estilos.css.map */
